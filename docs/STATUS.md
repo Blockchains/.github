@@ -92,19 +92,19 @@ Every result below comes from a real run. Nothing was mocked or deleted. gitleak
 | [blockchainlab.com](https://github.com/Blockchains/blockchainlab.com) | none | ✅ 200 (312 links ok) | not run (Grok Build source) | not edited (Grok Build) | — |
 | [tmp-e2e](https://github.com/Blockchains/tmp-e2e) | ✅ 1/1 | — | — | empty test repo; report only, not deleted | — |
 | [HoodPilot](https://github.com/Blockchains/HoodPilot) | none | — | — | ⚠️ placeholder: README only; nothing to document | — |
-| [x.github.io](https://github.com/Blockchains/x.github.io) | none | — | — | ⚠️ placeholder: README only; nothing to document | — |
-| [Lab](https://github.com/Blockchains/Lab) | none | — | — | ⚠️ 2015 placeholder: 2-line README; nothing to document | — |
+| [x.github.io](https://github.com/Blockchains/x.github.io) | none | — | — | 📦 archived 2026-10-04 (no real commit in 12 months; `gh repo unarchive` to restore) | — |
+| [Lab](https://github.com/Blockchains/Lab) | none | — | — | 📦 archived 2026-10-04 (no real commit in 12 months; `gh repo unarchive` to restore) | — |
 | [HoodPilots](https://github.com/Blockchains/HoodPilots) | ✅ 1/1 | — | — | third-party hackathon code; not rebranded | — |
 | [relic](https://github.com/Blockchains/relic) | ✅ 1/1 | ✅ 200 | — | third-party hackathon code; not rebranded | — |
 | [clawchestra-hackathon](https://github.com/Blockchains/clawchestra-hackathon) | ✅ 1/1 | — | — | third-party hackathon code; not rebranded | — |
 | [glom-analysis-project](https://github.com/Blockchains/glom-analysis-project) | ✅ 1/1 | — | — | third-party hackathon code; not rebranded | — |
-| [badger-timelock](https://github.com/Blockchains/badger-timelock) | ✅ 1/1 | — | — | 2020 third-party import; not rebranded (description set) | meta |
-| [badger-geyser](https://github.com/Blockchains/badger-geyser) | ✅ 1/1 | — | — | 2020 third-party import; not rebranded (description set) | meta |
-| [badger-docs](https://github.com/Blockchains/badger-docs) | none | — | — | 2020 third-party import; not rebranded | — |
-| [badger-deploy](https://github.com/Blockchains/badger-deploy) | ✅ 1/1 | — | — | 2020 third-party import; not rebranded | — |
-| [badger-dao](https://github.com/Blockchains/badger-dao) | ✅ 1/1 | — | — | 2020 third-party import; not rebranded | — |
-| [synthetix-exchange-stats](https://github.com/Blockchains/synthetix-exchange-stats) | ✅ 1/1 | — | — | 2020 third-party import; not rebranded | — |
-| [mStable-tech-challenges](https://github.com/Blockchains/mStable-tech-challenges) | none | — | — | 2020 third-party import; not rebranded | — |
-| [webapp](https://github.com/Blockchains/webapp) | ✅ 1/1 | ⚠️ swap.bancor.network 403 (upstream, not ours) | — | 2020 third-party import; not rebranded | — |
+| [badger-timelock](https://github.com/Blockchains/badger-timelock) | ✅ 1/1 | — | — | 📦 archived 2026-10-04 (no real commit in 12 months; `gh repo unarchive` to restore) | meta |
+| [badger-geyser](https://github.com/Blockchains/badger-geyser) | ✅ 1/1 | — | — | 📦 archived 2026-10-04 (no real commit in 12 months; `gh repo unarchive` to restore) | meta |
+| [badger-docs](https://github.com/Blockchains/badger-docs) | none | — | — | 📦 archived 2026-10-04 (no real commit in 12 months; `gh repo unarchive` to restore) | — |
+| [badger-deploy](https://github.com/Blockchains/badger-deploy) | ✅ 1/1 | — | — | 📦 archived 2026-10-04 (no real commit in 12 months; `gh repo unarchive` to restore) | — |
+| [badger-dao](https://github.com/Blockchains/badger-dao) | ✅ 1/1 | — | — | 📦 archived 2026-10-04 (no real commit in 12 months; `gh repo unarchive` to restore) | — |
+| [synthetix-exchange-stats](https://github.com/Blockchains/synthetix-exchange-stats) | ✅ 1/1 | — | — | 📦 archived 2026-10-04 (no real commit in 12 months; `gh repo unarchive` to restore) | — |
+| [mStable-tech-challenges](https://github.com/Blockchains/mStable-tech-challenges) | none | — | — | 📦 archived 2026-10-04 (no real commit in 12 months; `gh repo unarchive` to restore) | — |
+| [webapp](https://github.com/Blockchains/webapp) | ✅ 1/1 | ⚠️ swap.bancor.network 403 (upstream, not ours) | — | 📦 archived 2026-10-04 (no real commit in 12 months; `gh repo unarchive` to restore) | — |
 
 Raw data on the box: `/workspace/e2e-ci.json`, `e2e-pages.json`, `e2e-lychee/`, `e2e-docs.json`, `e2e-progress.json`.
