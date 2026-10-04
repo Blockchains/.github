@@ -1,0 +1,21 @@
+name: validate blocks
+on:
+  push: { branches: [main] }
+  pull_request:
+  workflow_dispatch:
+  schedule: [{ cron: "15 6 * * *" }]   # daily: catches a repo pushing an invalid blocks.json
+permissions: { contents: read }
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q jsonschema==4.23.0
+      - name: Schema is a valid JSON Schema (2020-12)
+        run: python3 -c "import json,jsonschema;jsonschema.Draft202012Validator.check_schema(json.load(open('docs/blocks.schema.json')));print('schema ok')"
+      - name: Every live Blockchains repo's blocks.json validates
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: python3 scripts/validate_blocks.py

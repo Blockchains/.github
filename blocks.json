@@ -1,0 +1,80 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Blockchains/.github/main/docs/blocks.schema.json",
+  "schema_version": "1.0",
+  "name": ".github",
+  "repo": "Blockchains/.github",
+  "summary": "Org-wide defaults (issue/PR templates, CONTRIBUTING, CODE_OF_CONDUCT, SECURITY) plus the building-block docs: BUILD-WITH-BLOCKS.md, BLOCKS-SCHEMA.md, blocks.schema.json and the workflow that validates every repo's blocks.json.",
+  "kind": [
+    "docs",
+    "automation"
+  ],
+  "stability": "stable",
+  "license": "NOASSERTION",
+  "entrypoints": [
+    {
+      "type": "file",
+      "name": "docs/blocks.schema.json",
+      "ref": "docs/blocks.schema.json",
+      "usage": "https://raw.githubusercontent.com/Blockchains/.github/main/docs/blocks.schema.json"
+    },
+    {
+      "type": "file",
+      "name": "docs/BUILD-WITH-BLOCKS.md",
+      "ref": "docs/BUILD-WITH-BLOCKS.md",
+      "usage": "how to assemble projects from Blockchains repos, with 3 verified recipes"
+    },
+    {
+      "type": "cli",
+      "name": "scripts/validate_blocks.py",
+      "ref": "scripts/validate_blocks.py",
+      "usage": "python3 scripts/validate_blocks.py [--local DIR ...]   # validates every repo's blocks.json"
+    },
+    {
+      "type": "github-action",
+      "name": "validate blocks",
+      "ref": ".github/workflows/validate-blocks.yml",
+      "usage": "push, daily, workflow_dispatch"
+    }
+  ],
+  "inputs": [
+    {
+      "name": "blocks.json files",
+      "type": "JSON",
+      "description": "fetched from every non-archived Blockchains repo"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "validation report",
+      "type": "CI log"
+    }
+  ],
+  "deps": [
+    "python3",
+    "jsonschema"
+  ],
+  "compatible_with": [
+    {
+      "repo": "Blockchains/blockchains.github.io",
+      "how": "hub aggregates every blocks.json into /blocks.json"
+    },
+    {
+      "repo": "Blockchains/blockchainlab-sdk",
+      "how": "example block"
+    },
+    {
+      "repo": "Blockchains/blockchainlab-mcp",
+      "how": "example block"
+    }
+  ],
+  "tests": {
+    "command": "pip install jsonschema && python3 scripts/validate_blocks.py",
+    "ci": ".github/workflows/validate-blocks.yml",
+    "network": true
+  },
+  "docs": {
+    "readme": "README.md",
+    "agents": "AGENTS.md",
+    "llms": "llms.txt"
+  }
+}
