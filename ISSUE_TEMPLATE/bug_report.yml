@@ -1,0 +1,22 @@
+name: Bug report
+description: Something in a Blockchain Lab tool, dataset, lab or service is wrong or broken
+labels: [bug]
+body:
+  - type: input
+    id: where
+    attributes: { label: Where, description: "URL, repo, dataset or tool name", placeholder: "https://blockchains.github.io/gas/" }
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes: { label: What happened, description: "What you did, what you expected, what you saw. Include tx hashes / addresses / chain IDs if relevant." }
+    validations: { required: true }
+  - type: textarea
+    id: env
+    attributes: { label: Environment, description: "Browser / OS / Node / Python / Foundry version", placeholder: "Chrome 140, macOS 15" }
+  - type: checkboxes
+    id: sec
+    attributes:
+      label: Security
+      options:
+        - label: This is NOT a security vulnerability (those go to a private advisory — see SECURITY.md)
+          required: true

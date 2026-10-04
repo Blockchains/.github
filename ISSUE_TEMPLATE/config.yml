@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Blockchain Lab Hub — search every service first
+    url: https://blockchains.github.io/
+    about: 75 tools, datasets, AI briefs and monitors in one place.
+  - name: Report a security vulnerability (private)
+    url: https://github.com/Blockchains/blockchains.github.io/security/advisories/new
+    about: Please do not open public issues for vulnerabilities.
